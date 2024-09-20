@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Download Resume PDF By Faiza Sharif</h1>
+
+
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="father name">Father Name:</label><br>
+            <input type="text" id="father name" name="father name" required><br> 
+
+            <label for="phone number">Phone Number:</label><br>
+            <input type="number" id="phone number" name="phone number" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <!--profile picture-->
+            <label for="profile picture">Profile Picture:</label><br>
+            <input type="file" id="profile picture" name="profile picture" accept="image/*" required>
+        </fieldset>
+
+
+        <fieldset>
+             <legend>Education</legend>
+            <label for="education">Education:</label><br>
+            <textarea id="education" name="education" rows="4" required ></textarea>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label><br>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label><br>
+            <textarea id="skills" name="skills" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+            <label for="hobbies">Hobbies</label><br>
+            <textarea id="hobbies" name="hobbies" rows="4" required ></textarea>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+
+    <div id="resumeOutput" class="hidden">
+        <!--Resume Will Be Generated Below-->
+    </div>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
